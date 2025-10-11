@@ -3,45 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RajArt </title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" media="screen and (max-width:1170px)" href="phone.css">
+    <title>RajArt - Custom Trophies & Corporate Gifts</title>
+    <link rel="stylesheet" href="style2.css">
+    <!-- <link rel="stylesheet" media="screen and (max-width:1170px)" href="phone.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lilita+One&family=Lobster&family=Protest+Revolution&display=swap" rel="stylesheet">
-    
+</head>      
 <body>
     <nav id="navbar">
         <div id="logo">
             <img src="rajartlogo.png" alt="">
         </div>
         <ul>
-            <li class="item"><a>Home</a></li>
-            <li class="item"><a>Services</a></li>
-            <li class="item"><a>About us </a></li>
-            <li class="item"><a>Contact us</a></li>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#aboutus">About Us</a></li>
+            <li class="item"><a href="#services1">Products</a></li>
+            <li class="item"><a href="#client-section">Our Clients </a></li>
+            <li class="item"><a href="#contactus">Contact us</a></li>
         </ul>
     </nav>
     <section id="home">
         <h1 class="welcome">Welcome to RajArt</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quaerat rerum sit!</p>
-        <button class="btn">Contact us</button>
+        <h3>Crafting Custom Awards That Inspire Excellence</h3>
+        <div class="intro">
+            <p>At RajArt, we specialize in creating high-quality Lapel Pins, Trophies, Medals, Mementoes, Badges, and Solder Works. Based in Mumbai, we blend craftsmanship with creativity to deliver customized recognition products that leave a lasting impression. </p>
+            <h2>"We turn every moment of success into a symbol of pride."</h2>
+        </div>
+        <button class="btn"><a href="#contactno">Contact us</a></button>
     </section>
 
-    <section class="services-container">
+    <section id="aboutus">
+        <div class="about-container">
+            <div class="about-text">
+                <h1 class="h-prim">About Us</h1>
+                <p>
+                    Established in Mumbai, RajArt is a trusted name in the world of customized awards and corporate gifting. With years of experience and a passion for creativity, we specialize in crafting high-quality <strong>trophies, medals, lapel pins, mementoes, badges, and solder works</strong> that reflect professionalism and pride.
+                </p>
+                <p>
+                    Our mission is to provide meaningful recognition through personalized products that leave a lasting impression. Whether it's a corporate milestone, sporting achievement, or academic award, RajArt ensures that each creation stands as a symbol of excellence.
+                </p>
+                <p>
+                    We blend modern design techniques with traditional craftsmanship to deliver one-of-a-kind products that resonate with your brand and values.
+                </p>
+            </div>
+            <div class="about-image">
+                <img src="rajartlogo.png" alt="About RajArt">
+            </div>
+        </div>
+    </section>
+
+    <section class="services-container" id="services1">
         <h1 class="h-prim">What do we provide</h1>
         <div class="allservices">
-            <div class="servicebox" id="services1">
+            <div class="servicebox" id="trophies">
                     <img src="trophy.jpg" alt=""><hr>
                     <h2 class="h-sec">Trophies</h2>
                     <p>Our premium trophies are crafted for excellence, ideal for corporate events, sports, and academic achievements.Designed to impress, they boost recognition and enhance brand value in every celebration.</p>
             </div>
-            <div class="servicebox" id="services2">
+            <div class="servicebox" id="lapel-pins">
                     <img src="lapelpins.jpg" alt=""><hr>
                     <h2 class="h-sec">Lapel Pins</h2>
                     <p>Custom lapel pins are perfect for branding, identity, and promotional giveaways.They are small yet impactful tools to strengthen loyalty and recognition.</p>
             </div>
-            <div class="servicebox" id="services3">
+            <div class="servicebox" id="mementoes">
                     <img src="mementoes.jpg" alt=""><hr>
                     <h2 class="h-sec">Mementoes</h2>
                     <p>Elegant mementoes make lasting impressions at corporate functions, retirements, and award ceremonies.Their personalized designs make them a top-selling keepsake item.?</p>
@@ -49,17 +74,17 @@
         </div>
 
         <div class="allservices1">
-            <div class="servicebox" id="services1">
+            <div class="servicebox" id="medals">
                     <img src="medals.jpg" alt=""><hr>
                     <h2 class="h-sec">Medals</h2>
                     <p>Our medals signify honor and achievement, suitable for schools, sports, and institutional events.High-quality finishes and customization options drive consistent sales across all segments.</p>
             </div>
-            <div class="servicebox" id="services2">
+            <div class="servicebox" id="badges">
                     <img src="badges.jpg" alt=""><hr>
                     <h2 class="h-sec">Badges</h2>
                     <p>Badges are essential for identification and promotional activities across industries.Affordable and customizable, they cater to both bulk and specialized sales.</p>
             </div>
-            <div class="servicebox" id="services3">
+            <div class="servicebox" id="keychains">
                     <img src="keychain.jpg" alt=""><hr>
                     <h2 class="h-sec">Keychains</h2>
                     <p>Our customizable keychains serve as functional gifts and branding tools for events and promotions.Their daily utility and affordable pricing make them a popular and fast-moving product in our sales lineup.</p>
@@ -85,7 +110,7 @@
         </div>
     </section>
 
-    <section id="contact">
+    <section id="contactus">
         <h1 class="h-prim">Contact us</h1>
         <div id="contactbox">
             <form action="">
@@ -95,7 +120,7 @@
                 </div>
                 <div class="formgrp">
                     <label for="email">Email:</label>
-                    <input type="email" name="email" id="name" placeholder="Enter your Email">
+                    <input type="email" name="email" id="email" placeholder="Enter your Email">
                 </div>
                 <div class="formgrp">
                     <label for="phone">Phone:</label>
@@ -105,9 +130,44 @@
                     <label for="message">Message:</label>
                     <textarea name="message" id="message"></textarea>
                 </div>
+                <div class="formgrp">
+                     <button type="submit">Submit</button>
+                </div>
             </form>
         </div>
     </section>
-</body>
 
+        <!-- Map & Contact Section -->
+    <section id="map-contact">
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d560.3043822738215!2d72.8577440967289!3d19.139936577305644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b747233f033f%3A0xae9bf04edc5b4b7!2sRajart!5e0!3m2!1sen!2sin!4v1753170209328!5m2!1sen!2sin" 
+                width="100%" 
+                height="350" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+
+        <div class="footer-content" id="contactno">
+            <div class="contact-info">
+                <h3>CONTACT US</h3>
+                <p>📧 rajmementoes.com</p>
+                <p>📞 +91 9372192919</p>
+                <p>🕒 Mon - Sat: 9AM - 6PM<br>Sun: Closed</p>
+            </div>
+            <div class="company-links">
+                <h3>RAJART</h3>
+                <p><a href="#">Home</a></p>
+                <p><a href="#">About</a></p>
+                <p><a href="#">Services</a></p>
+                <p><a href="#">Contact</a></p>
+            </div>
+        </div>
+    </section>
+</body>
 </html>

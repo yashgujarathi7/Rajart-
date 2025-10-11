@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --navbar-height: 59px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    /* position: sticky; */
+}
+#navbar::before{
+    content: "";
+    position: absolute;
+    height: 25%;
+    width: 61%;
+    background-color: black;
+    z-index: -1;
+}
+#logo{
+    margin:35px 45px;
+}
+#logo img{
+    top: 10px;
+    width: 50px;
+    cursor: pointer;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    display: block;
+    padding: 2px 15px;
+    border-radius: 7px;
+    text-decoration: none;
+    color: rgb(255, 177, 10);
+    transition-property: background-colour transform ;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+#navbar ul li a:hover{
+    background-color:rgb(255, 177, 10);
+    color: black;
+    transform: scale(1.1);
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    text-align: center;
+    height: 324px;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url('rajart\ bg.png') no-repeat center center/cover;
+    z-index: -2;
+}
+#home p{
+    color: aliceblue;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.welcome{
+    font-size: 3rem;
+    padding: 12px;
+    font-family: "Lobster", sans-serif;
+}
+.btn{
+    padding: 1px 10px;
+    border: 2px solid rgb(255, 177, 10);
+    color: #000000;
+    margin: 17px;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    margin: 9px;
+    background-color: blanchedalmond;
+}
+.btn:hover{
+    background-color:rgb(255, 177, 10);
+    color: black;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.h-prim{
+    font-size: 3rem;
+    padding: 12px;
+    text-align: center;
+}
+.h-sec{
+    font-size: 3rem;
+    padding: 12px;
+}
+.services-container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 141px;
+
+}
+.allservices{
+    margin: 34px;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid #ebebeb;
+    background-color: #37371f;
+}
+.allservices1{
+    margin: 34px;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid #ebebeb;
+    background-color: #37371f;
+}
+.servicebox{
+    padding: 5px 10px;
+    border: 2px solid rgb(255, 177, 10);
+    color: #000000;
+    font-size: 1.3rem;
+    border-radius: 24px;
+    margin: 9px;
+    background-color: #958442;
+}
+.servicebox p{
+    font-size: 1rem;
+}
+.servicebox img{
+    height: 300px;
+    width: 300px;
+    padding: 5px;
+    border-radius: 21px;
+    margin: auto;
+    display: block;
+}
+#client-section{
+    height: 245px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('clients\ bg.jpg')no-repeat center center/cover;
+    opacity: 0.4;
+    z-index: -1;
+    height: 40%;
+    width: 100%;
+}
+#client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#client img{
+    height: 77px;
+}
+.client-item{
+    padding: 35px;
+}
+#contactbox{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    padding-bottom: 34px;
+}
+#contactbox textarea{
+    width: 100%;
+    padding: 0.5rem;
+}
+#contactbox label{
+    font-size: 1.3rem;
+}
