@@ -113,7 +113,7 @@
     <section id="contactus">
         <h1 class="h-prim">Contact us</h1>
         <div id="contactbox">
-            <form action="">
+            <form action="https://formspree.io/f/xzzjjnyq" method="POST">
                 <div class="formgrp">
                     <label for="name">Name:</label>
                     <input type="text" name="name" id="name" placeholder="Enter your Name">
@@ -133,9 +133,16 @@
                 <div class="formgrp">
                      <button type="submit">Submit</button>
                 </div>
+                <p id="success-message" style="color:green; display:none;">Thank you! Your message has been sent.</p>
             </form>
         </div>
     </section>
+    <script>
+        document.querySelector("form").addEventListener("submit", function() 
+        {
+            document.getElementById("success-message").style.display = "block";
+        });
+    </script>
 
         <!-- Map & Contact Section -->
     <section id="map-contact">
@@ -170,4 +177,5 @@
         </div>
     </section>
 </body>
+
 </html>
