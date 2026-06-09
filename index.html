@@ -5,10 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RajArt - Custom Trophies & Corporate Gifts</title>
     <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet" media="screen and (max-width:1170px)" href="phone.css"> -->
+   <link rel="stylesheet" media="screen and (max-width:1170px)" href="phone.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lilita+One&family=Lobster&family=Protest+Revolution&display=swap" rel="stylesheet">
+    <script>
+        let lastScrollTop = 0;
+        const navbar = document.getElementById("navbar");
+
+        window.addEventListener("scroll", () => {
+            let currentScroll =
+                window.pageYOffset ||
+                document.documentElement.scrollTop;
+
+            if(currentScroll > lastScrollTop && currentScroll > 80){
+                navbar.style.transform = "translateY(-100%)";
+            }
+            else{
+                navbar.style.transform = "translateY(0)";
+            }
+
+            lastScrollTop = currentScroll;
+        });
+    </script>
 </head>      
 <body>
     <nav id="navbar">
@@ -137,12 +156,6 @@
             </form>
         </div>
     </section>
-    <script>
-        document.querySelector("form").addEventListener("submit", function() 
-        {
-            document.getElementById("success-message").style.display = "block";
-        });
-    </script>
 
         <!-- Map & Contact Section -->
     <section id="map-contact">
@@ -176,6 +189,11 @@
             </div>
         </div>
     </section>
+    <script>
+        document.querySelector("form").addEventListener("submit", function() 
+        {
+            document.getElementById("success-message").style.display = "block";
+        });
+    </script>
 </body>
-
 </html>
