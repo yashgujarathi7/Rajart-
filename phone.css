@@ -42,7 +42,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    gap: 4px;
+    gap: 2px;
 
     padding: 0;
     margin: 0;
