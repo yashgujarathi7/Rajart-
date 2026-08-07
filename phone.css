@@ -1,182 +1,141 @@
-/* mobile1.css */
+/* --- PHONE SPECIFIC OVERRIDES (max-width: 768px) --- */
 
-/* Make images and text scale properly */
-img {
-    max-width: 100%;
-    height: auto;
-}
+/* 1. Header & Hamburger Navigation */
+.top-bar { font-size: 14px; padding: 6px 0; }
+.top-bar-container { padding: 0 10px; justify-content: center; }
+.top-bar-right { display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 15px; white-space: nowrap; }
+.top-bar-right a { font-size: 14px; }
+.working-hours { display: none; }
 
-/* Navigation */
-/* NAVBAR */
-/* MOBILE NAVBAR */
-
-#navbar{
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
+/* Slide-in Mobile Drawer */
+.nav-links {
     position: fixed;
     top: 0;
-    left: 0;
-
-    width: 100%;
-    padding: 8px 12px;
-
-    background: rgba(0,0,0,0.95);
-    z-index: 9999;
-
-    transition: transform 0.35s ease;
-}
-
-#logo{
+    right: -100%;
+    width: 80%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.98);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 999;
+    box-shadow: -10px 0 30px rgba(0,0,0,0.5);
     margin: 0;
-}
-
-#logo img{
-    width: 45px;
-    height: 45px;
-    object-fit: contain;
-}
-
-#navbar ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    gap: 2px;
-
     padding: 0;
-    margin: 0;
+}
+.nav-links.nav-active { right: 0; }
+
+.mobile-menu-toggle {
+    display: block;
+    z-index: 1001;
+    position: relative;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: var(--text-light);
 }
 
-#navbar ul li a{
-    font-size: 0.75rem;
-    padding: 6px 5px;
-}
-
-/* Logo */
-#logo {
-    margin: 10px 0;
-}
-
-/* Home Section */
-/* HOME SECTION */
-#home{
+/* 2. Hero Section Mobile Overlap Fixes */
+.hero {
     height: auto;
     min-height: 100vh;
-    padding-top: 90px;
-}
-
-.welcome {
-    font-size: clamp(2.5rem, 7vw, 5.2rem);
-}
-
-#home h3{
-    font-size: clamp(1.2rem, 4vw, 2.6rem);
-}
-
-#home .intro{
-    font-size: 1.4rem;
-    margin-top: 10px;
-    font-style: normal;
-    opacity: 0.9;
-    max-width: 1100px;
-    width: 90%;
-    padding: 0;
-}
-
-#home .intro h2{
-    font-size: 1.2rem;
-    margin-top: 10px;
-}
-
-.btn{
-    width: auto;
-    padding: 10px 20px;
-}
-
-/* Buttons */
-.btn {
-    width: 33%;
-    font-size: 1.1rem;
-    margin: 10px 0;
-    padding: 10px 20px;
-}
-
-/* Heading Sizes */
-.h-prim{
-    font-size: 2rem;
-    padding: 10px;
-}
-
-.h-sec{
-    font-size: 1.5rem;
-    padding: 8px;
-}
-
-/* Services */
-.services-container {
-    padding-top: 40px;
-}
-.allservices, .allservices1 {
+    padding: 130px 0 60px 0; 
+    display: flex;
     flex-direction: column;
-    margin: 10px;
-    padding: 10px;
+    justify-content: center;
 }
-.servicebox {
-    width: 100%;
-    font-size: 1.1rem;
+.hero-content { 
+    margin-top: 0; 
+    padding: 0 15px; 
 }
-.servicebox img {
-    width: 100%;
-    height: auto;
+.hero h1 { 
+    font-size: 34px; 
+    line-height: 1.25; 
+}
+.hero-description { font-size: 16px; }
+.hero-buttons { 
+    flex-direction: column; 
+    width: 100%; 
+    gap: 15px; 
+}
+.btn-primary, .btn-secondary-dark, .btn-nav-cta { 
+    width: 100%; 
+    justify-content: center; 
 }
 
-/* Clients */
-#client {
+/* 3. Global Typography Reductions for Mobile */
+.section-title h2 { font-size: 36px; }
+
+/* 4. Global Grids -> 1 Column Stacked */
+.grid-3, 
+.features-grid, 
+.stats-grid, 
+.faq-accordion, 
+.contact-wrapper { 
+    grid-template-columns: 1fr; 
+    gap: 2rem;
+}
+
+/* 5. Mobile About Image Fix */
+.about-grid { grid-template-columns: 1fr; gap: 2rem; }
+.about-image { 
+    order: -1; 
+    margin-bottom: 1rem; 
+    width: 100%; 
+    display: flex; 
+    justify-content: center; 
+}
+.about-logo-wrapper { 
+    max-width: 90%; 
+    padding: 2rem; 
+}
+.about-logo-wrapper img { 
+    width: 100%; 
+    height: auto; 
+}
+
+/* 6. Form Mobile Fix */
+.form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+}
+
+/* 7. Timeline (About Section) */
+.timeline::before { left: 20px; }
+.timeline-item { width: 100%; padding-left: 50px; padding-right: 0; margin-bottom: 2rem; }
+.timeline-item:nth-child(even) { left: 0; }
+.timeline-dot, .timeline-item:nth-child(even) .timeline-dot { left: 10px; top: 25px; }
+
+/* 8. Clients */
+.modern-client-grid {
+    grid-template-columns: repeat(2, 1fr); 
+}
+
+/* 9. Reviews Section Mobile (1 card) */
+.testimonial-slide { flex: 0 0 100%; }
+
+/* 10. FAQ Overrides */
+.faq-main-heading { font-size: 34px; }
+.faq-question { font-size: 18px; padding: 15px; }
+.faq-answer p { font-size: 14px; padding-bottom: 15px; }
+
+/* 11. Footer Alignment */
+.footer { padding: 2rem 0 1rem; }
+.footer-grid {
+    text-align: center;
+    gap: 1.5rem;
+}
+.footer p, .footer a { font-size: 14px; }
+.footer-logo {
+    display: flex;
     flex-direction: column;
+    align-items: center;
 }
-.client-item {
-    padding: 10px;
-}
-#client img {
-    height: 60px;
-}
+.footer-logo-img { margin: 0 auto 15px auto; }
 
-/* Contact Form */
-form{
-    width:100%;
-}
-
-.formgrp{
-    width:100%;
-}
-
-#contactbox{
-    padding:20px;
-}
-
-#contactbox input,
-#contactbox textarea{
-    width:100%;
-}
-/* ABOUT US */
-
-.about-container{
-    flex-direction: column-reverse;
-    gap: 20px;
-}
-
-.about-image{
-    max-width: 180px;
-    min-width: 180px;
-    padding-top: 0;
-}
-
-.about-text{
-    min-width: 100%;
-    font-size: 1rem;
-}
-
-.about-text p{
-    text-align: left;
-}
+/* 12. Contact Maps Span Full Width */
+.map-container { width: 100%; }
