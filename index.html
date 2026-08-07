@@ -3,197 +3,649 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RajArt - Custom Trophies & Corporate Gifts</title>
-    <link rel="stylesheet" href="style.css">
-   <link rel="stylesheet" media="screen and (max-width:1170px)" href="phone.css">
+    <title>RajArt | Premium Custom Trophies & Awards</title>
+    <meta name="description" content="RajArt specializes in custom trophies, badges, medals, and premium corporate gifts in Mumbai. Request a free quote today.">
+    
+    <!-- Premium Google Fonts: Cormorant Garamond (Headings), Inter (Body), Poppins (Buttons/Labels) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lilita+One&family=Lobster&family=Protest+Revolution&display=swap" rel="stylesheet">
-    <script>
-        let lastScrollTop = 0;
-        const navbar = document.getElementById("navbar");
-
-        window.addEventListener("scroll", () => {
-            let currentScroll =
-                window.pageYOffset ||
-                document.documentElement.scrollTop;
-
-            if(currentScroll > lastScrollTop && currentScroll > 80){
-                navbar.style.transform = "translateY(-100%)";
-            }
-            else{
-                navbar.style.transform = "translateY(0)";
-            }
-
-            lastScrollTop = currentScroll;
-        });
-    </script>
-</head>      
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600&family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation & Desktop CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- DEDICATED MOBILE CSS -->
+    <link rel="stylesheet" href="phone.css" media="screen and (max-width:768px)">
+</head>
 <body>
-    <nav id="navbar">
-        <div id="logo">
-            <img src="rajartlogo.png" alt="">
-        </div>
-        <ul>
-            <li class="item"><a href="#home">Home</a></li>
-            <li class="item"><a href="#aboutus">About Us</a></li>
-            <li class="item"><a href="#services1">Products</a></li>
-            <li class="item"><a href="#client-section">Our Clients </a></li>
-            <li class="item"><a href="#contactus">Contact us</a></li>
-        </ul>
-    </nav>
-    <section id="home">
-        <h1 class="welcome">Welcome to RajArt</h1>
-        <h3>Crafting Custom Awards That Inspire Excellence</h3>
-        <div class="intro">
-            <p>At RajArt, we specialize in creating high-quality Lapel Pins, Trophies, Medals, Mementoes, Badges, and Solder Works. Based in Mumbai, we blend craftsmanship with creativity to deliver customized recognition products that leave a lasting impression. </p>
-            <h2>"We turn every moment of success into a symbol of pride."</h2>
-        </div>
-        <button class="btn"><a href="#contactno">Contact us</a></button>
-    </section>
 
-    <section id="aboutus">
-        <div class="about-container">
-            <div class="about-text">
-                <h1 class="h-prim">About Us</h1>
-                <p>
-                    Established in Mumbai, RajArt is a trusted name in the world of customized awards and corporate gifting. With years of experience and a passion for creativity, we specialize in crafting high-quality <strong>trophies, medals, lapel pins, mementoes, badges, and solder works</strong> that reflect professionalism and pride.
-                </p>
-                <p>
-                    Our mission is to provide meaningful recognition through personalized products that leave a lasting impression. Whether it's a corporate milestone, sporting achievement, or academic award, RajArt ensures that each creation stands as a symbol of excellence.
-                </p>
-                <p>
-                    We blend modern design techniques with traditional craftsmanship to deliver one-of-a-kind products that resonate with your brand and values.
-                </p>
-            </div>
-            <div class="about-image">
-                <img src="rajartlogo.png" alt="About RajArt">
-            </div>
-        </div>
-    </section>
-
-    <section class="services-container" id="services1">
-        <h1 class="h-prim">What do we provide</h1>
-        <div class="allservices">
-            <div class="servicebox" id="trophies">
-                    <img src="trophy.jpg" alt=""><hr>
-                    <h2 class="h-sec">Trophies</h2>
-                    <p>Our premium trophies are crafted for excellence, ideal for corporate events, sports, and academic achievements.Designed to impress, they boost recognition and enhance brand value in every celebration.</p>
-            </div>
-            <div class="servicebox" id="lapel-pins">
-                    <img src="lapelpins.jpg" alt=""><hr>
-                    <h2 class="h-sec">Lapel Pins</h2>
-                    <p>Custom lapel pins are perfect for branding, identity, and promotional giveaways.They are small yet impactful tools to strengthen loyalty and recognition.</p>
-            </div>
-            <div class="servicebox" id="mementoes">
-                    <img src="mementoes.jpg" alt=""><hr>
-                    <h2 class="h-sec">Mementoes</h2>
-                    <p>Elegant mementoes make lasting impressions at corporate functions, retirements, and award ceremonies.Their personalized designs make them a top-selling keepsake item.?</p>
-            </div>
-        </div>
-
-        <div class="allservices1">
-            <div class="servicebox" id="medals">
-                    <img src="medals.jpg" alt=""><hr>
-                    <h2 class="h-sec">Medals</h2>
-                    <p>Our medals signify honor and achievement, suitable for schools, sports, and institutional events.High-quality finishes and customization options drive consistent sales across all segments.</p>
-            </div>
-            <div class="servicebox" id="badges">
-                    <img src="badges.jpg" alt=""><hr>
-                    <h2 class="h-sec">Badges</h2>
-                    <p>Badges are essential for identification and promotional activities across industries.Affordable and customizable, they cater to both bulk and specialized sales.</p>
-            </div>
-            <div class="servicebox" id="keychains">
-                    <img src="keychain.jpg" alt=""><hr>
-                    <h2 class="h-sec">Keychains</h2>
-                    <p>Our customizable keychains serve as functional gifts and branding tools for events and promotions.Their daily utility and affordable pricing make them a popular and fast-moving product in our sales lineup.</p>
-            </div>
-        </div>
-    </section>
-<hr>
-    <section id="client-section">
-        <h1 class="h-prim">Our Clients</h1>
-        <div id="client">
-            <div class="client-item">
-                <img src="air india logo.png" alt="">
-            </div>
-            <div class="client-item">
-                <img src="vistara logo.jpg" alt="">
-            </div>
-            <div class="client-item">
-                <img src="yes bank logo.png" alt="">
-            </div>
-            <div class="client-item">
-                <img src="jet airway logo.png" alt="">
-            </div>
-        </div>
-    </section>
-
-    <section id="contactus">
-        <h1 class="h-prim">Contact us</h1>
-        <div id="contactbox">
-            <form action="https://formspree.io/f/xzzjjnyq" method="POST">
-                <div class="formgrp">
-                    <label for="name">Name:</label>
-                    <input type="text" name="name" id="name" placeholder="Enter your Name">
+    <!-- UNIFIED HEADER -->
+    <header class="header-container" id="main-header">
+        <div class="top-bar">
+            <div class="container top-bar-container">
+                <div class="top-bar-right">
+                    <a href="tel:9323565763" aria-label="Call RajArt at +91 9323565763"><i class="fa-solid fa-phone"></i> +91 9323565763</a>
+                    <a href="mailto:rajmementoes@gmail.com" aria-label="Email RajArt"><i class="fa-solid fa-envelope"></i> rajmementoes@gmail.com</a>
+                    <span class="working-hours"><i class="fa-regular fa-clock"></i> Mon–Sat: 9AM–6PM | Sun: Closed</span>
                 </div>
-                <div class="formgrp">
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email" placeholder="Enter your Email">
-                </div>
-                <div class="formgrp">
-                    <label for="phone">Phone:</label>
-                    <input type="number" name="phone" id="phone" placeholder="Enter your Phone">
-                </div>
-                <div class="formgrp">
-                    <label for="message">Message:</label>
-                    <textarea name="message" id="message"></textarea>
-                </div>
-                <div class="formgrp">
-                     <button type="submit">Submit</button>
-                </div>
-                <p id="success-message" style="color:green; display:none;">Thank you! Your message has been sent.</p>
-            </form>
-        </div>
-    </section>
-
-        <!-- Map & Contact Section -->
-    <section id="map-contact">
-        <div class="map-container">
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d560.3043822738215!2d72.8577440967289!3d19.139936577305644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b747233f033f%3A0xae9bf04edc5b4b7!2sRajart!5e0!3m2!1sen!2sin!4v1753170209328!5m2!1sen!2sin" 
-                width="100%" 
-                height="350" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </div>
-    </section>
-
-
-        <div class="footer-content" id="contactno">
-            <div class="contact-info">
-                <h3>CONTACT US</h3>
-                <p>📧 rajmementoes.com</p>
-                <p>📞 +91 9372192919</p>
-                <p>🕒 Mon - Sat: 9AM - 6PM<br>Sun: Closed</p>
-            </div>
-            <div class="company-links">
-                <h3>RAJART</h3>
-                <p><a href="#">Home</a></p>
-                <p><a href="#">About</a></p>
-                <p><a href="#">Services</a></p>
-                <p><a href="#">Contact</a></p>
             </div>
         </div>
-    </section>
-    <script>
-        document.querySelector("form").addEventListener("submit", function() 
-        {
-            document.getElementById("success-message").style.display = "block";
-        });
-    </script>
+
+        <nav class="navbar" id="navbar" aria-label="Main Navigation">
+            <div class="container nav-container">
+                <a href="#home" class="brand-logo" aria-label="RajArt Home">
+                    <img src="rajartlogo.png" alt="RajArt Logo" class="nav-logo-img">
+                    <span>Raj<span class="text-accent">Art</span></span>
+                </a>
+                
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-item">Home</a></li>
+                    <li><a href="#about" class="nav-item">About</a></li>
+                    <li><a href="#categories" class="nav-item">Products</a></li>
+                    <li><a href="#clients" class="nav-item">Clients</a></li>
+                    <li><a href="#faq" class="nav-item">FAQ</a></li>
+                    <li><a href="#contact" class="btn-nav-cta">Get Quote</a></li>
+                </ul>
+                
+                <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Refined Hero Section -->
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-bg"></div>
+            <div class="hero-overlay-light"></div>
+
+            <div class="container hero-content" data-aos="fade-up" data-aos-duration="1000">
+                <span class="small-heading">WELCOME TO RAJART</span>
+                <h1>Crafting Custom Awards That Celebrate Every Achievement</h1>
+                <p class="hero-description">At RajArt, we specialize in designing and manufacturing premium Trophies, Awards, Medals, Mementoes, Badges, Lapel Pins, Keychains, and Corporate Gifts. Based in Mumbai, we combine expert craftsmanship, premium materials, and creative customization to deliver recognition products that leave a lasting impression for businesses, schools, sports tournaments, institutions, and organizations across India.</p>
+                <p class="hero-tagline">"We turn every moment of success into a symbol of pride."</p>
+                <div class="hero-buttons">
+                    <a href="#categories" class="btn-primary" data-aos="fade-up" data-aos-delay="200">Explore Products <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#contact" class="btn-secondary-dark" data-aos="fade-up" data-aos-delay="400">Get a Free Quote</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section-padding bg-ivory">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image" data-aos="fade-right">
+                        <div class="about-logo-wrapper shadow-lg">
+                            <img src="rajartlogo.png" alt="RajArt Manufacturing Facility Logo" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="about-text" data-aos="fade-left">
+                        <span class="small-heading">ABOUT US</span>
+                        <h2>Crafting Recognition That Inspires Success</h2>
+                        <div class="accent-line-left"></div>
+                        <p>RajArt specializes in custom trophies, awards, medals, mementos, and premium corporate gifts designed to celebrate achievements and strengthen brand recognition.</p>
+                        <p>From employee recognition programs and corporate events to school competitions and sports tournaments, we deliver high-quality customized solutions with precision craftsmanship and timely delivery.</p>
+                        
+                        <button id="toggleJourneyBtn" class="btn-text mt-3" aria-expanded="false" aria-controls="journeyContent">Discover More <i class="fa-solid fa-chevron-down"></i></button>
+                    </div>
+                </div>
+
+                <div id="journeyContent" class="journey-wrapper">
+                    <div class="journey-inner pt-4">
+                        <div class="section-title mt-4">
+                            <span class="small-heading">OUR HISTORY</span>
+                            <h3>Our Journey</h3>
+                            <p>A legacy built on trust, quality craftsmanship, and relentless dedication to our clients.</p>
+                        </div>
+                        
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content card">
+                                    <h4>The Foundation</h4>
+                                    <p>Founded with a passion for recognizing true talent, RajArt began as a small workshop dedicated to crafting basic custom trophies.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content card">
+                                    <h4>Growing Customer Base</h4>
+                                    <p>Word of our precision spread, establishing strong relationships with local schools, colleges, and sports academies.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content card">
+                                    <h4>Corporate Expansion</h4>
+                                    <p>We expanded our catalog to include premium corporate gifts, acrylic mementos, and executive crystal awards.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="categories" class="categories section-padding bg-white">
+            <div class="container">
+                <div class="section-title" data-aos="fade-up">
+                    <span class="small-heading">OUR PRODUCTS</span>
+                    <h2>Our Premium Collections</h2>
+                    <div class="accent-line"></div>
+                    <p>Discover our wide range of meticulously crafted recognition products.</p>
+                </div>
+                
+                <div class="grid-3 product-grid">
+                    <div class="card product-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-img-wrapper"><img src="badges.jpg" alt="Custom Metal Badges" loading="lazy"></div>
+                        <div class="card-body">
+                            <h3>Badges</h3>
+                            <p>High-quality custom metal and acrylic badges for schools, corporate ID, and events.</p>
+                            <a href="#contact" class="card-link" aria-label="Get a quote for Badges">Explore Collection <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="card product-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-img-wrapper"><img src="medals.jpg" alt="Sports Achievement Medals" loading="lazy"></div>
+                        <div class="card-body">
+                            <h3>Medals</h3>
+                            <p>Bespoke sports, academic, and marathon medals designed with premium ribbons and die-cast precision.</p>
+                            <a href="#contact" class="card-link" aria-label="Get a quote for Medals">Explore Collection <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="card product-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-img-wrapper"><img src="mementoes.jpg" alt="Acrylic & Wooden Mementoes" loading="lazy"></div>
+                        <div class="card-body">
+                            <h3>Mementoes</h3>
+                            <p>Elegant wooden, glass, and acrylic mementos perfect for corporate gifting and seminars.</p>
+                            <a href="#contact" class="card-link" aria-label="Get a quote for Mementoes">Explore Collection <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="card product-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="card-img-wrapper"><img src="trophy.jpg" alt="Premium Gold Trophies" loading="lazy"></div>
+                        <div class="card-body">
+                            <h3>Trophies</h3>
+                            <p>From towering sports cups to modern executive awards, crafted to celebrate true excellence.</p>
+                            <a href="#contact" class="card-link" aria-label="Get a quote for Trophies">Explore Collection <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="card product-card" data-aos="fade-up" data-aos-delay="500">
+                        <div class="card-img-wrapper"><img src="lapelpins.jpg" alt="Corporate Lapel Pins" loading="lazy"></div>
+                        <div class="card-body">
+                            <h3>Lapel Pins</h3>
+                            <p>Exquisite custom enamel and metal lapel pins for brand identity and exclusive memberships.</p>
+                            <a href="#contact" class="card-link" aria-label="Get a quote for Lapel Pins">Explore Collection <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="card product-card" data-aos="fade-up" data-aos-delay="600">
+                        <div class="card-img-wrapper"><img src="keychain.jpg" alt="Custom Metal Keychains" loading="lazy"></div>
+                        <div class="card-body">
+                            <h3>Keychains</h3>
+                            <p>Durable and stylish customized keychains serving as the perfect corporate giveaway.</p>
+                            <a href="#contact" class="card-link" aria-label="Get a quote for Keychains">Explore Collection <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why RajArt Section -->
+        <section id="why-rajart" class="why-rajart section-padding bg-ivory">
+            <div class="container">
+                <div class="section-title text-center" data-aos="fade-up">
+                    <span class="small-heading">WHY RAJART</span>
+                    <h2>Built In-house, Delivered On Time</h2>
+                    <div class="accent-line"></div>
+                    <p class="section-subtitle">We control every step of the process—from design and laser engraving to precision manufacturing, polishing, quality inspection, packaging, and timely delivery.</p>
+                </div>
+                
+                <div class="features-grid mt-4">
+                    <div class="card feature-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="feature-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+                        <h3>Custom Design Support</h3>
+                        <p>We create personalized trophies, awards, medals, and corporate gifts tailored to your event, branding, and recognition needs.</p>
+                    </div>
+                    <div class="card feature-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="feature-icon"><i class="fa-regular fa-gem"></i></div>
+                        <h3>Premium Materials</h3>
+                        <p>Crafted using premium acrylic, crystal, metal, wood, brass, stainless steel, and high-quality finishes for a luxurious appearance.</p>
+                    </div>
+                    <div class="card feature-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="feature-icon"><i class="fa-solid fa-truck-fast"></i></div>
+                        <h3>Fast Delivery</h3>
+                        <p>Efficient manufacturing and dispatch ensure your products reach you on time, even for urgent event requirements.</p>
+                    </div>
+                    <div class="card feature-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="feature-icon"><i class="fa-solid fa-boxes-stacked"></i></div>
+                        <h3>Bulk Order Capability</h3>
+                        <p>From small batches to thousands of customized awards, RajArt handles bulk manufacturing while maintaining consistent quality.</p>
+                    </div>
+                    <div class="card feature-card" data-aos="fade-up" data-aos-delay="500">
+                        <div class="feature-icon"><i class="fa-solid fa-clipboard-check"></i></div>
+                        <h3>Quality Assurance</h3>
+                        <p>Every product undergoes careful inspection for engraving accuracy, finishing, durability, and overall craftsmanship before dispatch.</p>
+                    </div>
+                    <div class="card feature-card" data-aos="fade-up" data-aos-delay="600">
+                        <div class="feature-icon"><i class="fa-solid fa-tags"></i></div>
+                        <h3>Competitive Pricing</h3>
+                        <p>Factory-direct pricing with premium quality, helping organizations receive exceptional value without compromising standards.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics Section -->
+        <section id="stats" class="stats pattern-bg section-padding">
+            <div class="container">
+                <div class="section-title text-center" data-aos="fade-up">
+                    <span class="small-heading">OUR IMPACT</span>
+                    <h2>Measuring Excellence</h2>
+                    <div class="accent-line"></div>
+                </div>
+                <div class="stats-grid mt-4">
+                    <div class="card stat-card shadow-soft" data-aos="fade-up" data-aos-delay="100">
+                        <div class="stat-icon"><i class="fa-solid fa-trophy"></i></div>
+                        <h3 class="counter-wrap"><span class="counter" data-target="1000">0</span><span class="plus">+</span></h3>
+                        <p>Orders Completed</p>
+                    </div>
+                    <div class="card stat-card shadow-soft" data-aos="fade-up" data-aos-delay="200">
+                        <div class="stat-icon"><i class="fa-solid fa-face-smile"></i></div>
+                        <h3 class="counter-wrap"><span class="counter" data-target="500">0</span><span class="plus">+</span></h3>
+                        <p>Happy Clients</p>
+                    </div>
+                    <div class="card stat-card shadow-soft" data-aos="fade-up" data-aos-delay="300">
+                        <div class="stat-icon"><i class="fa-solid fa-star"></i></div>
+                        <h3 class="counter-wrap"><span class="counter" data-target="15">0</span><span class="plus">+</span></h3>
+                        <p>Years of Experience</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Clients Section -->
+        <section id="clients" class="clients section-padding bg-white">
+            <div class="container">
+                <div class="section-title" data-aos="fade-up">
+                    <span class="small-heading">CLIENTS</span>
+                    <h2>Our Trusted Clients</h2>
+                    <div class="accent-line"></div>
+                    <p>We are proud to manufacture awards for these incredible organizations.</p>
+                </div>
+                
+                <div class="modern-client-grid">
+                    <div class="client-brand-card" data-aos="fade-up" data-aos-delay="50">
+                        <div class="client-logo-wrap"><img src="air india logo.png" alt="Air India Logo" loading="lazy"></div>
+                        <h5>Air India</h5>
+                    </div>
+                    <div class="client-brand-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="client-logo-wrap"><img src="vistara logo.jpg" alt="Vistara Logo" loading="lazy"></div>
+                        <h5>Vistara</h5>
+                    </div>
+                    <div class="client-brand-card" data-aos="fade-up" data-aos-delay="150">
+                        <div class="client-logo-wrap"><img src="yes bank logo.png" alt="Yes Bank Logo" loading="lazy"></div>
+                        <h5>Yes Bank</h5>
+                    </div>
+                    <div class="client-brand-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="client-logo-wrap"><img src="jet airway logo.png" alt="Jet Airways Logo" loading="lazy"></div>
+                        <h5>Jet Airways</h5>
+                    </div>
+                    <div class="client-brand-card" data-aos="fade-up" data-aos-delay="250">
+                        <div class="client-logo-wrap"><img src="mahindra logo.png" alt="Mahindra Logo" loading="lazy"></div>
+                        <h5>Mahindra</h5>
+                    </div>
+                    <div class="client-brand-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="client-logo-wrap"><img src="goodrej logo.jpg" alt="Godrej Logo" loading="lazy"></div>
+                        <h5>Godrej</h5>
+                    </div>
+                    <div class="client-brand-card" data-aos="fade-up" data-aos-delay="350">
+                        <div class="client-logo-wrap"><img src="sun pharma logo.jpg" alt="Sun Pharma Logo" loading="lazy"></div>
+                        <h5>Sun Pharma</h5>
+                    </div>
+                    <div class="client-brand-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="client-logo-wrap"><img src="hindustan unilever logo.jpg" alt="Hindustan Unilever Logo" loading="lazy"></div>
+                        <h5>Hindustan Unilever</h5>
+                    </div>
+                    <div class="client-brand-card" data-aos="fade-up" data-aos-delay="450">
+                        <div class="client-logo-wrap"><img src="akasa logo.png" alt="Akasa Air Logo" loading="lazy"></div>
+                        <h5>Akasa Air</h5>
+                    </div>
+                    <div class="client-brand-card" data-aos="fade-up" data-aos-delay="500">
+                        <div class="client-logo-wrap"><img src="star air logo.png" alt="Star Air Logo" loading="lazy"></div>
+                        <h5>Star Air</h5>
+                    </div>
+                    <div class="client-brand-card" data-aos="fade-up" data-aos-delay="550">
+                        <div class="client-logo-wrap"><img src="kokilaben hospital logo.jpg" alt="Kokilaben Hospital Logo" loading="lazy"></div>
+                        <h5>Kokilaben Hospital</h5>
+                    </div>
+                    <div class="client-brand-card" data-aos="fade-up" data-aos-delay="600">
+                        <div class="client-logo-wrap"><img src="hinduja hospital logo.png" alt="Hinduja Hospital Logo" loading="lazy"></div>
+                        <h5>Hinduja Hospital</h5>
+                    </div>
+                    <div class="client-brand-card" data-aos="fade-up" data-aos-delay="650">
+                        <div class="client-logo-wrap"><img src="lions club logo.png" alt="Lions Club Logo" loading="lazy"></div>
+                        <h5>Lions Club</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq-section section-padding bg-ivory">
+            <div class="container">
+                <div class="faq-header text-center" data-aos="fade-up">
+                    <span class="small-heading">FAQ</span>
+                    <h2 class="faq-main-heading">Questions We Hear Often</h2>
+                    <div class="accent-line"></div>
+                    <p class="faq-subtitle">Find answers to the most common questions about RajArt's products, customization process, delivery timelines, and ordering.</p>
+                </div>
+                
+                <div class="faq-accordion mt-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">Are you a trophy manufacturer or a reseller? <i class="fa-solid fa-chevron-down"></i></button>
+                        <div class="faq-answer">
+                            <p>RajArt is a direct manufacturer specializing in trophies, medals, badges, mementoes, lapel pins, keychains, plaques, and corporate awards. Every product is designed and manufactured with strict quality control at our facility.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">Do you deliver outside Mumbai? <i class="fa-solid fa-chevron-down"></i></button>
+                        <div class="faq-answer">
+                            <p>Yes. We provide reliable delivery services across India. Whether your event is in Mumbai, Delhi, Bengaluru, Hyderabad, Chennai, or any other city, we ensure safe packaging and timely delivery.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">What is the minimum order quantity? <i class="fa-solid fa-chevron-down"></i></button>
+                        <div class="faq-answer">
+                            <p>There is no strict minimum order quantity. We accept both individual custom orders and large bulk orders depending on your requirements.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">How quickly can you deliver trophies? <i class="fa-solid fa-chevron-down"></i></button>
+                        <div class="faq-answer">
+                            <p>Delivery depends on the quantity and level of customization. Most standard orders are completed within a few business days, while urgent orders can often be accommodated after confirmation.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">Can you match our exact brand colours? <i class="fa-solid fa-chevron-down"></i></button>
+                        <div class="faq-answer">
+                            <p>Absolutely. We can engrave or print your company logo, event branding, school emblem, or custom artwork while matching your preferred colours and design specifications.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">Do you provide a sample before order? <i class="fa-solid fa-chevron-down"></i></button>
+                        <div class="faq-answer">
+                            <p>Yes. For large orders, we can provide a digital mock-up or a physical sample (where applicable) for approval before commencing full-scale production.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">What materials do you use? <i class="fa-solid fa-chevron-down"></i></button>
+                        <div class="faq-answer">
+                            <p>We manufacture products using premium acrylic, crystal, metal, brass, wood, MDF, stainless steel, resin, and other high-quality materials based on the design requirements.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">Can I customize every product? <i class="fa-solid fa-chevron-down"></i></button>
+                        <div class="faq-answer">
+                            <p>Yes. Almost every product can be customized with names, logos, event details, colours, shapes, engravings, and packaging to match your exact requirements.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Customer Reviews Slider -->
+        <section id="reviews" class="reviews-section section-padding bg-white">
+            <div class="container">
+                <div class="section-title text-center" data-aos="fade-up">
+                    <span class="small-heading">CUSTOMER REVIEWS</span>
+                    <h2>Client Voices</h2>
+                    <div class="accent-line"></div>
+                    <p class="section-subtitle">Hear what our valued customers have to say about their experience with RajArt.</p>
+                </div>
+                
+                <div class="testimonial-grid-wrapper mt-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-track" id="testimonialTrack">
+                        <div class="testimonial-slide">
+                            <div class="card testimonial-card">
+                                <div class="client-info-top">
+                                    <div class="client-avatar"><i class="fa-solid fa-user-tie"></i></div>
+                                    <div>
+                                        <h4>Rahul Sharma</h4>
+                                        <span>School Administrator</span>
+                                    </div>
+                                </div>
+                                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                                <p class="review-text">"RajArt delivered exceptional trophies for our annual awards ceremony. Excellent quality and timely delivery."</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-slide">
+                            <div class="card testimonial-card">
+                                <div class="client-info-top">
+                                    <div class="client-avatar"><i class="fa-solid fa-briefcase"></i></div>
+                                    <div>
+                                        <h4>Priya Mehta</h4>
+                                        <span>HR Manager</span>
+                                    </div>
+                                </div>
+                                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                                <p class="review-text">"The crystal awards were stunning. Our executives were extremely impressed with the detail and premium packaging."</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-slide">
+                            <div class="card testimonial-card">
+                                <div class="client-info-top">
+                                    <div class="client-avatar"><i class="fa-solid fa-medal"></i></div>
+                                    <div>
+                                        <h4>Ankit Desai</h4>
+                                        <span>Event Organizer</span>
+                                    </div>
+                                </div>
+                                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                                <p class="review-text">"Handled our bulk marathon medals flawlessly. Great communication and competitive pricing without losing quality."</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-slide">
+                            <div class="card testimonial-card">
+                                <div class="client-info-top">
+                                    <div class="client-avatar"><i class="fa-solid fa-building"></i></div>
+                                    <div>
+                                        <h4>Sneha Kapoor</h4>
+                                        <span>Corporate Client</span>
+                                    </div>
+                                </div>
+                                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                                <p class="review-text">"We ordered custom lapel pins for our global team. The enamel work is perfect and colors match our brand entirely."</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-slide">
+                            <div class="card testimonial-card">
+                                <div class="client-info-top">
+                                    <div class="client-avatar"><i class="fa-solid fa-trophy"></i></div>
+                                    <div>
+                                        <h4>Amit Verma</h4>
+                                        <span>Sports Academy</span>
+                                    </div>
+                                </div>
+                                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                                <p class="review-text">"RajArt is our go-to partner for all tournament cups. They are robust, shiny, and the engraving is always sharp."</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-slide">
+                            <div class="card testimonial-card">
+                                <div class="client-info-top">
+                                    <div class="client-avatar"><i class="fa-solid fa-handshake"></i></div>
+                                    <div>
+                                        <h4>Rajesh Iyer</h4>
+                                        <span>NGO Director</span>
+                                    </div>
+                                </div>
+                                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                                <p class="review-text">"Their wooden plaques brought tears of joy to our volunteers. Thank you RajArt for turning moments into memories."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-dots" id="sliderDots" aria-label="Testimonial Navigation"></div>
+            </div>
+        </section>
+
+        <!-- Upgraded Professional Contact Form Section -->
+        <section id="contact" class="contact section-padding bg-ivory">
+            <div class="container">
+                <div class="section-title" data-aos="fade-up">
+                    <span class="small-heading">GET IN TOUCH</span>
+                    <h2>Contact Us</h2>
+                    <div class="accent-line"></div>
+                </div>
+                
+                <div class="contact-wrapper mt-4">
+                    <div class="card contact-form-container" data-aos="fade-up" data-aos-delay="100">
+                        <h3>Request a Free Quotation</h3>
+                        <p class="form-subtitle">Fill in the details below to receive a personalized quote for your recognition needs.</p>
+                        
+                        <form id="contactForm" novalidate>
+                            <div class="form-row">
+                                <div class="input-group">
+                                    <label for="name">Full Name <span class="required">*</span></label>
+                                    <input type="text" id="name" placeholder="e.g. Rahul Sharma" required>
+                                    <span class="error-msg"><i class="fa-solid fa-circle-exclamation"></i> Please enter your name</span>
+                                </div>
+                                <div class="input-group">
+                                    <label for="email">Email Address <span class="required">*</span></label>
+                                    <input type="email" id="email" placeholder="e.g. rahul@company.com" required>
+                                    <span class="error-msg"><i class="fa-solid fa-circle-exclamation"></i> Please enter a valid email</span>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="input-group">
+                                    <label for="phone">Phone Number <span class="required">*</span></label>
+                                    <input type="tel" id="phone" placeholder="e.g. 9876543210" pattern="[0-9]{10}" required>
+                                    <span class="error-msg"><i class="fa-solid fa-circle-exclamation"></i> Please enter a valid phone number</span>
+                                </div>
+                                <div class="input-group">
+                                    <label for="category">Product Category <span class="required">*</span></label>
+                                    <select id="category" required>
+                                        <option value="" disabled selected>Select a Product...</option>
+                                        <option value="Trophy">Trophy</option>
+                                        <option value="Medal">Medal</option>
+                                        <option value="Badge">Badge</option>
+                                        <option value="Memento">Memento</option>
+                                        <option value="Lapel Pin">Lapel Pin</option>
+                                        <option value="Keychain">Keychain</option>
+                                        <option value="Corporate Gift">Corporate Gift</option>
+                                        <option value="Acrylic Award">Acrylic Award</option>
+                                        <option value="Crystal Award">Crystal Award</option>
+                                        <option value="Wooden Plaque">Wooden Plaque</option>
+                                        <option value="Custom Product">Custom Product</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                    <span class="error-msg"><i class="fa-solid fa-circle-exclamation"></i> Please select a product category</span>
+                                </div>
+                            </div>
+
+                            <div class="input-group">
+                                <label for="quantity">Approximate Quantity <span class="required">*</span></label>
+                                <input type="number" id="quantity" placeholder="e.g. 50, 100, 250" min="1" required>
+                                <span class="error-msg"><i class="fa-solid fa-circle-exclamation"></i> Please enter the required quantity</span>
+                            </div>
+
+                            <div class="input-group customization-group">
+                                <label>Would you like customization?</label>
+                                <div class="radio-group">
+                                    <label><input type="radio" name="customization" value="Yes" id="cust-yes"> Yes</label>
+                                    <label><input type="radio" name="customization" value="No" id="cust-no" checked> No</label>
+                                </div>
+                            </div>
+
+                            <div class="input-group" id="customization-details-group" style="display: none;">
+                                <label for="cust-details">Describe your customization requirements</label>
+                                <textarea id="cust-details" rows="2" placeholder="Logos, names, colors, shapes..."></textarea>
+                            </div>
+
+                            <div class="input-group file-upload-group">
+                                <label for="artwork">Upload Design (Optional)</label>
+                                <input type="file" id="artwork" accept=".png, .jpg, .jpeg, .pdf, .ai">
+                                <small>Max size: 10MB (Accepts PNG, JPG, PDF, AI)</small>
+                            </div>
+
+                            <div class="input-group">
+                                <label for="message">Additional Requirements <span class="required">*</span></label>
+                                <textarea id="message" rows="4" placeholder="Tell us about your event, preferred material, colours, engraving, packaging or any special requirements." required></textarea>
+                                <span class="error-msg"><i class="fa-solid fa-circle-exclamation"></i> Please provide your event or product requirements</span>
+                            </div>
+
+                            <button type="submit" class="btn-primary form-btn" id="submitBtn">
+                                <span class="btn-text">Request Free Quote</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="contact-details" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card info-box">
+                            <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
+                            <div>
+                                <h4>Working Hours</h4>
+                                <p>Mon - Sat: 9:00 AM - 6:00 PM<br>Sunday: Closed</p>
+                            </div>
+                        </div>
+                        
+                        <div class="card info-box">
+                            <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div>
+                                <h4>Our Location</h4>
+                                <p>Jogeshwari(E), Mumbai, Maharashtra, India</p>
+                            </div>
+                        </div>
+
+                        <div class="card map-container p-2">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d560.3043822738215!2d72.8577440967289!3d19.139936577305644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b747233f033f%3A0xae9bf04edc5b4b7!2sRajart!5e0!3m2!1sen!2sin!4v1753170209328!5m2!1sen!2sin" width="100%" height="250" style="border:0; border-radius: 16px;" allowfullscreen="" loading="lazy" aria-label="RajArt Location Map"></iframe>
+                            <div class="map-action text-center mt-2 pb-2">
+                                <a href="https://maps.app.goo.gl/BqvaLd45FJnX8onh7" target="_blank" class="btn-primary w-100" aria-label="Get Directions to RajArt on Google Maps"><i class="fa-solid fa-map-location-dot"></i> Get Directions</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/919323565763" class="whatsapp-float" target="_blank" aria-label="Chat directly on WhatsApp">
+        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+    </a>
+
+    <!-- Premium Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <div class="footer-logo">
+                    <img src="rajartlogo.png" alt="RajArt Footer Logo" class="footer-logo-img" loading="lazy">
+                </div>
+                <p>Premium custom manufacturing for trophies, awards, and corporate gifting in Mumbai.</p>
+            </div>
+            <div>
+                <h4>Contact Info</h4>
+                <p><i class="fa-solid fa-phone text-accent"></i> <a href="tel:9323565763">+91 9323565763</a></p>
+                <p><i class="fa-solid fa-envelope text-accent"></i> <a href="mailto:rajmementoes@gmail.com">rajmementoes@gmail.com</a></p>
+            </div>
+            <div>
+                <h4>Business Hours</h4>
+                <p><i class="fa-regular fa-clock text-accent"></i> Mon – Sat: 9:00 AM – 6:00 PM</p>
+                <p><i class="fa-solid fa-door-closed text-accent"></i> Sunday: Closed</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 RajArt. Premium Custom Manufacturing. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
